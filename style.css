@@ -74,6 +74,10 @@ h1 {
   background-color: #f48fb1; /* Light pink for petting */
 }
 
+#rideButton {
+  background-color: #f48fb1; /* Light pink for petting */
+}
+
 @media (max-width: 600px) {
   .unicorn-container {
       width: 300px;  /* Reduce container size on smaller screens */

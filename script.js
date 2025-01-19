@@ -40,3 +40,12 @@ petButton.addEventListener('click', () => {
          playSound('magic.mp3');
      }, 3000);
  });
+ rideButton.addEventListener('click', () => {
+    console.log('Riding the unicorn!');
+    unicorn.src = 'pet.jpg';
+    playSound('iloveyou.mp3');
+     setTimeout(() => {
+         unicorn.src = 'unicorn1.jpg';
+         playSound('magic.mp3');
+     }, 3000);
+ });
