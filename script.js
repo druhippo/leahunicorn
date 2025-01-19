@@ -2,7 +2,7 @@ const unicorn = document.getElementById('unicorn');
 const feedButton = document.getElementById('feedButton');
 const waterButton = document.getElementById('waterButton');
 const petButton = document.getElementById('petButton');
-const rideButton = document.getElementById('petButton');
+const rideButton = document.getElementById('rideButton');
 
 // Function to play a sound
 function playSound(soundFile) {
@@ -32,6 +32,7 @@ waterButton.addEventListener('click', () => {
           playSound('magic.mp3');
     }, 10000);
 });
+
 petButton.addEventListener('click', () => {
     console.log('Petting the unicorn!');
     unicorn.src = 'pet.jpg';
@@ -41,6 +42,7 @@ petButton.addEventListener('click', () => {
          playSound('magic.mp3');
      }, 3000);
  });
+ 
  rideButton.addEventListener('click', () => {
     console.log('Riding the unicorn!');
     unicorn.src = 'pet.jpg';
