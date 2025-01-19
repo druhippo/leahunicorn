@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+  text-align: center;
+}
+
+.unicorn-container {
+  width: 450px;  /* Increase width */
+  height: 450px; /* Increase height */
+  margin-bottom: 10px;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+#unicorn {
+  max-width: 90%; /* Allow the image to take up to 90% of its container */
+  max-height: 90%; /* Allow the image to take up to 90% of its container */
+   display: block;
+   object-fit: contain; /* Makes sure the image stays inside its container */
+}
+
+h1 {
+      text-align: center; /* Center the text */
+      margin-bottom: 5px; /* add spacing below */
+      margin-top: 5px; /* remove default top margin */
+      font-size: 2.5em; /* Make the font larger */
+}
+
+.controls {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px;  /* Add space above buttons */
+    gap: 10px; /* Add spacing between the buttons */
+    flex-wrap: wrap; /* allow for wrapping onto the next line on smaller screens */
+}
+
+.controls button {
+  font-size: 1.5em; /* Make the button text larger */
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#feedButton {
+  background-color: #a5d6a7; /* Light green for feed */
+}
+
+#waterButton {
+  background-color: #81d4fa; /* Light blue for water */
+}
+
+#petButton {
+  background-color: #ffcdd2; /* Light pink for petting */
+}
+
+@media (max-width: 600px) {
+    .unicorn-container {
+        width: 300px;  /* Reduce container size on smaller screens */
+        height: 300px; /* Reduce container size on smaller screens */
+    }
+}
