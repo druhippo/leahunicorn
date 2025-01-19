@@ -15,8 +15,8 @@ body {
 }
 
 .unicorn-container {
-  width: 450px;
-  height: 450px;
+  width: 550px;
+  height: 550px;
   margin-bottom: 10px;
   display: flex; /* Enable Flexbox */
   justify-content: center; /* Center image horizontally */

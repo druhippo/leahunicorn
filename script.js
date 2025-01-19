@@ -2,6 +2,7 @@ const unicorn = document.getElementById('unicorn');
 const feedButton = document.getElementById('feedButton');
 const waterButton = document.getElementById('waterButton');
 const petButton = document.getElementById('petButton');
+const rideButton = document.getElementById('petButton');
 
 // Function to play a sound
 function playSound(soundFile) {
