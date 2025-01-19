@@ -5,7 +5,9 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f0f8ff; /* Light blue background */
+     background: linear-gradient(135deg, #e0f7fa, #f0f8ff); /* Gentle Gradient */
+       font-family: 'Arial', sans-serif; /* change font family */
+        transition: background 0.3s ease;
 }
 
 .container {
@@ -13,35 +15,36 @@ body {
 }
 
 .unicorn-container {
-  width: 450px;  /* Increase width */
-  height: 450px; /* Increase height */
+  width: 450px;
+  height: 450px;
   margin-bottom: 10px;
   display: flex; /* Enable Flexbox */
   justify-content: center; /* Center image horizontally */
   align-items: center; /* Center image vertically */
 }
 
-#unicorn {
-  max-width: 90%; /* Allow the image to take up to 90% of its container */
-  max-height: 90%; /* Allow the image to take up to 90% of its container */
-   display: block;
-   object-fit: contain; /* Makes sure the image stays inside its container */
+#unicorn, #puppy {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  object-fit: contain;
 }
 
 h1 {
-      text-align: center; /* Center the text */
-      margin-bottom: 5px; /* add spacing below */
-      margin-top: 5px; /* remove default top margin */
-      font-size: 2.5em; /* Make the font larger */
-}
+          text-align: center; /* Center the text */
+          margin-bottom: 5px; /* add spacing below */
+          margin-top: 5px; /* remove default top margin */
+       font-size: 2.5em;
+       }
 
 .controls {
-    display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    margin-top: 20px;  /* Add space above buttons */
-    gap: 10px; /* Add spacing between the buttons */
-    flex-wrap: wrap; /* allow for wrapping onto the next line on smaller screens */
-}
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin-top: 20px;  /* Add space above buttons */
+      gap: 10px; /* Add spacing between the buttons */
+      flex-wrap: wrap; /* allow for wrapping onto the next line on smaller screens */
+  }
+
 
 .controls button {
   font-size: 1.5em; /* Make the button text larger */
@@ -50,23 +53,30 @@ h1 {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
+  transform: scale(1.05);
 }
 
 #feedButton {
-  background-color: #a5d6a7; /* Light green for feed */
+  background-color: #c8e6c9; /* Light green for feed */
 }
 
 #waterButton {
-  background-color: #81d4fa; /* Light blue for water */
+  background-color: #b3e5fc; /* Light blue for water */
 }
 
 #petButton {
-  background-color: #ffcdd2; /* Light pink for petting */
+  background-color: #f48fb1; /* Light pink for petting */
 }
 
 @media (max-width: 600px) {
-    .unicorn-container {
-        width: 300px;  /* Reduce container size on smaller screens */
-        height: 300px; /* Reduce container size on smaller screens */
-    }
+  .unicorn-container {
+      width: 300px;  /* Reduce container size on smaller screens */
+      height: 300px; /* Reduce container size on smaller screens */
+  }
 }
